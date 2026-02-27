@@ -167,12 +167,23 @@ nav.site ul li {
 	z-index: 2;
 }
 
-.col {
-	float: left;
-	padding: 0 20px;
+
+header.site, .wrapper {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
 }
 
-.col.two { width: auto; }
+.col {
+	padding: 0 20px;
+	width: 100%;
+}
+
+.col.one,
+.col.two {
+    flex: 0 0 100%;  /* always full width */
+    max-width: 100%;
+}
 
 .wrapper {
   animation: scroll 5s 1;
@@ -307,8 +318,8 @@ pre.ascii-table {
 
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
-    /*html,*/ body {
-        font-size: 40px; /* Slightly smaller font size for mobile */
+    html, body {
+        font-size: 35px; /* Slightly bigger font size for mobile */
     }
 
     nav.site ul li {
@@ -342,5 +353,9 @@ pre.ascii-table {
 
     .wrapper {
         padding: 10px; /* Adjust wrapper padding for mobile */
+    }
+	.col {
+    	flex: 1 100%; /* Allow each column to take 100% width on small screens */
+    	padding: 10px; /* Adjust padding on mobile */
     }
 }
