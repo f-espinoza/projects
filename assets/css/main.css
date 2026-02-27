@@ -322,11 +322,11 @@ pre.ascii-table {
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-size: 1.2em; /* Reduce the heading font size on mobile */
+        font-size: 2em; /* Reduce the heading font size on mobile */
     }
 
        input[type=text], textarea {
-        font-size: 1em; /* Ensure text input is appropriately sized on mobile */
+        font-size: 2em; /* Ensure text input is appropriately sized on mobile */
         width: 100%; /* Make inputs take full width on small screens */
     }
 
