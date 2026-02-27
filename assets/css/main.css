@@ -305,3 +305,42 @@ pre.ascii-table {
   overflow-x: auto;
 }
 
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    html, body {
+        font-size: 30px; /* Slightly smaller font size for mobile */
+    }
+
+    nav.site ul li {
+        display: block;
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .wrapper, .content {
+        padding: 20px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1.2em; /* Reduce the heading font size on mobile */
+    }
+
+       input[type=text], textarea {
+        font-size: 1em; /* Ensure text input is appropriately sized on mobile */
+        width: 100%; /* Make inputs take full width on small screens */
+    }
+
+    input[type=submit],
+    a.button {
+        font-size: 1em; /* Adjust button text size */
+        padding: 10px 40px; /* Reduce padding on smaller screens for buttons */
+    }
+
+    #logo-v {
+        width: 150px; /* Reduce logo size on mobile */
+    }
+
+    .wrapper {
+        padding: 10px; /* Adjust wrapper padding for mobile */
+    }
+}
